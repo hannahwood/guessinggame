@@ -22,7 +22,7 @@ function playersGuessSubmission(){
 	var guess = +document.getElementById("submitValue").value;
 	document.getElementById("submitValue").value = '';
 	playersGuess = guess;
-	return guess;
+	checkGuess();
 }
 
 // Determine if the next guess should be a lower or higher number
@@ -34,8 +34,25 @@ function lowerOrHigher(){
 // Check if the Player's Guess is the winning number 
 
 function checkGuess(){
-	// add code here
+	var guesses = [];
+	if (playersGuess === winningNumber){
+		$("div.message" ).html( "<p><b>You won!</b></p>");
+	}
+	else if (100 < playersGuess && playersGuess< 1 ) {
+		$("div.message" ).html( "<p>That number is not between 1 and 100.</p>");
+	}
+	else if (guesses.indexOf(playersGuess) != -1){
+      		$("div.message" ).html( "<p>You already guessed that number.</p>");
+        }
+	else {
+		guesses.push(playersGuess);
+		guessesLeft = guesses.length;
+		$("div.message" ).html( "<p>Try again. </p>");
+		$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
+	}
+
 }
+
 
 // Create a provide hint button that provides additional clues to the "Player"
 
