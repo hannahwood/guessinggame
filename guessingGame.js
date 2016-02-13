@@ -19,7 +19,9 @@ function generateWinningNumber(){
 // Fetch the Players Guess
 
 function playersGuessSubmission(){
-	// add code here
+	var guess = +document.getElementById("sumbitValue").value;
+	document.getElementById("sumbitValue").value = '';
+	return guess;
 }
 
 // Determine if the next guess should be a lower or higher number
