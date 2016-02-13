@@ -60,7 +60,10 @@ function checkGuess(){
 //		var elt = document.getElementById("winMessage");
 //		elt.setAttribute("style", "color: red", "font-size: 15pt");
 		$("div.message" ).html( "<p><b>You won!</b></p>");
-		
+		guesses = [];
+	}
+	else if (guesses.length === 4) {
+		$("div.message" ).html( "<p><b>You lost!</b></p>");
 		guesses = [];
 	}
 	else if (100 < playersGuess && playersGuess< 1 ) {
