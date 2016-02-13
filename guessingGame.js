@@ -2,6 +2,8 @@
 /* **** Guessing Game Functions **** */
 
 // Generate the Winning Number
+var winningNumber = generateWinningNumber();
+
 
 function generateWinningNumber(){
 	//generates number between 1 and 100
@@ -15,7 +17,7 @@ function generateWinningNumber(){
 function playersGuessSubmission(){
 	var playersGuess = +document.getElementById("sumbitValue").value;
 	document.getElementById("sumbitValue").value = '';
-	return playersGuess;
+	checkGuess();
 }
 
 // Determine if the next guess should be a lower or higher number
