@@ -24,27 +24,27 @@ function playersGuessSubmission(){
 
 // Determine if the next guess should be a lower or higher number
 
-function lowerOrHigher(){
-	var difference = Math.abs(winningNumber - playersGuess);
-	var hilo = '';
-	if (winningNumber < playersGuess) {
-		hilo = 'higher';
-	}
-	else (hilo = 'lower');
-	if (difference >= 20) {
-		return ("Your Guess is " + hilo + " and 20 or more digits away from the Winning Number!");
-	}
-	else if (10 <= difference < 20){
-		return ("Your Guess is " + hilo + " and less than 20 digits away from the Winning Number!");
-	}
-	else if (5 < difference < 10){
-		return ("Your Guess is " + hilo + " and less than 10 digits away from the Winning Number!");
-	}
-	else {
-		return ("Your Guess is " + hilo + " and within 5 digits of the Winning Number!");
-	}
+// function lowerOrHigher(){
+// 	var difference = Math.abs(winningNumber - playersGuess);
+// 	var hilo = '';
+// 	if (winningNumber < playersGuess) {
+// 		hilo = 'higher';
+// 	}
+// 	else (hilo = 'lower');
+// 	if (difference >= 20) {
+// 		return ("Your Guess is " + hilo + " and 20 or more digits away from the Winning Number!");
+// 	}
+// 	else if (10 <= difference < 20){
+// 		return ("Your Guess is " + hilo + " and less than 20 digits away from the Winning Number!");
+// 	}
+// 	else if (5 < difference < 10){
+// 		return ("Your Guess is " + hilo + " and less than 10 digits away from the Winning Number!");
+// 	}
+// 	else {
+// 		return ("Your Guess is " + hilo + " and within 5 digits of the Winning Number!");
+// 	}
 	
-}
+// }
 
 // Check if the Player's Guess is the winning number 
 
