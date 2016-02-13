@@ -1,8 +1,7 @@
 /* **** Global Variables **** */
 // try to elminate these global variables in your project, these are here just to start.
 
-var playersGuess,
-    winningNumber = generateWinningNumber();
+
 
 $("#submitButton").click(playersGuessSubmission());
 
@@ -21,9 +20,9 @@ function generateWinningNumber(){
 
 
 function playersGuessSubmission(){
-	playersGuess = +document.getElementById("sumbitValue").value;
+	var playersGuess = +document.getElementById("sumbitValue").value;
 	document.getElementById("sumbitValue").value = '';
-//	checkGuess();
+	return playersGuess;
 }
 
 // Determine if the next guess should be a lower or higher number
