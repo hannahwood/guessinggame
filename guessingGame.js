@@ -1,4 +1,4 @@
-
+$( document ).ready(function(){
 /* **** Guessing Game Functions **** */
 
 // Generate the Winning Number
@@ -81,6 +81,6 @@ function provideHint(){
 function playAgain(){
 	// add code here
 }
-
+}
 
 /* **** Event Listeners/Handlers ****  */
