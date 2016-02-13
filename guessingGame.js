@@ -3,7 +3,7 @@
 
 // Generate the Winning Number
 var winningNumber = generateWinningNumber();
-
+var playersGuess = 0;
 
 function generateWinningNumber(){
 	//generates number between 1 and 100
@@ -15,7 +15,7 @@ function generateWinningNumber(){
 
 
 function playersGuessSubmission(){
-	var playersGuess = +document.getElementById("sumbitValue").value;
+	playersGuess = +document.getElementById("sumbitValue").value;
 	document.getElementById("sumbitValue").value = '';
 	checkGuess();
 }
