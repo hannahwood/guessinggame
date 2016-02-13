@@ -1,10 +1,3 @@
-/* **** Global Variables **** */
-// try to elminate these global variables in your project, these are here just to start.
-
-
-
-$("#submitButton").click(playersGuessSubmission());
-
 
 /* **** Guessing Game Functions **** */
 
@@ -55,22 +48,22 @@ function checkGuess(){
 	var guesses = [];
 	if (playersGuess === winningNumber){
 		$("div.message" ).html( "<p><b>You won!</b></p>");
-		continue;
 	}
 	else if (100 < playersGuess < 1 ) {
 		$("div.message" ).html( "<p>That number is not between 1 and 100.</p>");
-		continue;
 	}
-	for (i = 0, i < guesses.length, i++) {
-		if (playersGuess === guesses[i]){
-			$("div.message" ).html( "<p>You already guessed that number.</p>");
-		}
-		else {
-			guesses.push(playersGuess);
-			guessesLeft = guesses.length;
-			$("div.message" ).html( "<p>Try again. </p>");
-			$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
-		}
+	else{
+        for (i = 0; i < guesses.length; i++) {
+        	if (playersGuess === guesses[i]){
+        		$("div.message" ).html( "<p>You already guessed that number.</p>");
+        	}
+        	else {
+        		guesses.push(playersGuess);
+        		guessesLeft = guesses.length;
+        		$("div.message" ).html( "<p>Try again. </p>");
+        		$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
+        	}
+        }
 	}
 
 }
