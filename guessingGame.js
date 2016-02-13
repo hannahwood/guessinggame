@@ -4,6 +4,8 @@
 var playersGuess,
     winningNumber = generateWinningNumber();
 
+onclick="playersGuessSubmission()"
+$("#submitButton").click(playersGuessSubmission);
 
 
 /* **** Guessing Game Functions **** */
