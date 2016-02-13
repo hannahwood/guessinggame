@@ -41,10 +41,10 @@ function lowerOrHigher(){
 	if (difference >= 20) {
 		return ("Your Guess is " + hilo + " and 20 or more digits away from the Winning Number!");
 	}
-	else if (10 <= difference < 20){
+	else if (10 <= difference && difference < 20){
 		return ("Your Guess is " + hilo + " and less than 20 digits away from the Winning Number!");
 	}
-	else if (5 < difference < 10){
+	else if (5 < difference && difference < 10){
 		return ("Your Guess is " + hilo + " and less than 10 digits away from the Winning Number!");
 	}
 	else {
