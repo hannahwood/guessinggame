@@ -5,6 +5,9 @@ var playersGuess,
     winningNumber = generateWinningNumber(),
     guesses = [];
 
+$(function() {
+    $("form").submit(function() { return false; });
+});
 
 
 /* **** Guessing Game Functions **** */
