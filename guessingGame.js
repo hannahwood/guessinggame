@@ -2,9 +2,9 @@ $( document ).ready(function(){
 /* **** Guessing Game Functions **** */
 
 // Generate the Winning Number
-var winningNumber = generateWinningNumber();
-var playersGuess = 0;
-var guesses = [];
+// var winningNumber = generateWinningNumber();
+// var playersGuess = 0;
+// var guesses = [];
 
 function generateWinningNumber(){
 	//generates number between 1 and 100
@@ -18,6 +18,7 @@ function generateWinningNumber(){
 function playersGuessSubmission(){
 	var playersGuess = +document.getElementById("sumbitValue").value;
 	document.getElementById("sumbitValue").value = '';
+	return playersGuess;
 //	checkGuess();
 }
 
@@ -56,12 +57,12 @@ function checkGuess(){
 	else if (100 < playersGuess < 1 ) {
 		$("div.message" ).html( "<p>That number is not between 1 and 100.</p>");
 	}
-	else if (guesses.indexOf(playersGuess) != -1){
-        	$("div.message" ).html( "<p>You already guessed that number.</p>");
+//	else if (guesses.indexOf(playersGuess) != -1){
+  //      	$("div.message" ).html( "<p>You already guessed that number.</p>");
         }
 	else {
-		guesses.push(playersGuess);
-		guessesLeft = guesses.length;
+	//	guesses.push(playersGuess);
+	//	guessesLeft = guesses.length;
 		$("div.message" ).html( "<p>Try again. </p>");
 		$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
 	}
