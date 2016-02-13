@@ -48,8 +48,7 @@ function checkGuess(){
 	else {
 		guesses.push(playersGuess);
 		var guessesLeft = 5 - guesses.length;
-		$("div.message" ).html( "<p>Try again. </p>");
-		$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
+		$("div.message" ).html( "<p>Try again. " + guessesLeft + " guesses left</p>");
 	}
 
 }
