@@ -67,7 +67,7 @@ function checkGuess(){
 		guesses.push(playersGuess);
 		var guessesLeft = 5 - guesses.length;
 		$("div.message" ).html( "<p>Try again. " + guessesLeft + " guesses left</p>");
-		$("form.lowerHigher" ).html( "<p>" + lowerOrHigher() + "</p>");
+		$("div.lowerHigher" ).html( "<p>" + lowerOrHigher() + "</p>");
 	}
 
 }
