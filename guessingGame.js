@@ -21,6 +21,7 @@ function generateWinningNumber(){
 function playersGuessSubmission(){
 	var guess = +document.getElementById("submitValue").value;
 	document.getElementById("submitValue").value = '';
+	playersGuess = guess;
 	return guess;
 }
 
