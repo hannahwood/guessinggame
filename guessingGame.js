@@ -2,7 +2,8 @@
 // try to elminate these global variables in your project, these are here just to start.
 
 var playersGuess,
-    winningNumber = generateWinningNumber();
+    winningNumber = generateWinningNumber(),
+    guesses = [];
 
 
 
@@ -37,6 +38,7 @@ function checkGuess(){
 	var guesses = [];
 	if (playersGuess === winningNumber){
 		$("div.message" ).html( "<p><b>You won!</b></p>");
+		guesses = [];
 	}
 	else if (100 < playersGuess && playersGuess< 1 ) {
 		$("div.message" ).html( "<p>That number is not between 1 and 100.</p>");
@@ -46,7 +48,7 @@ function checkGuess(){
         }
 	else {
 		guesses.push(playersGuess);
-		guessesLeft = guesses.length;
+		var guessesLeft = 5 - guesses.length;
 		$("div.message" ).html( "<p>Try again. </p>");
 		$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
 	}
