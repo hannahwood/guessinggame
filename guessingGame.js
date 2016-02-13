@@ -2,7 +2,7 @@
 // try to elminate these global variables in your project, these are here just to start.
 
 var playersGuess,
-    winningNumber
+    winningNumber = generateWinningNumber();
 
 
 
@@ -11,7 +11,9 @@ var playersGuess,
 // Generate the Winning Number
 
 function generateWinningNumber(){
-	// add code here
+	//generates number between 1 and 100
+	var randomNumber = Math.floor(Math.random() * 100 + 1);
+	return randomNumber;
 }
 
 // Fetch the Players Guess
