@@ -4,6 +4,7 @@ $( document ).ready(function(){
 // Generate the Winning Number
 var winningNumber = generateWinningNumber();
 var playersGuess = 0;
+var guesses = [];
 
 function generateWinningNumber(){
 	//generates number between 1 and 100
@@ -47,18 +48,14 @@ function lowerOrHigher(){
 // Check if the Player's Guess is the winning number 
 
 function checkGuess(){
-	var guesses = [];
 	if (playersGuess === winningNumber){
 		$("div.message" ).html( "<p><b>You won!</b></p>");
 	}
 	else if (100 < playersGuess < 1 ) {
 		$("div.message" ).html( "<p>That number is not between 1 and 100.</p>");
 	}
-	else if{
-        for (i = 0; i < guesses.length; i++) {
-        	if (playersGuess === guesses[i]){
-        		$("div.message" ).html( "<p>You already guessed that number.</p>");
-        	}
+	else if (guesses.indexOf(playersGuess) != -1){
+        	$("div.message" ).html( "<p>You already guessed that number.</p>");
         }
 	else {
 		guesses.push(playersGuess);
