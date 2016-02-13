@@ -59,7 +59,7 @@ function checkGuess(){
 	}
 //	else if (guesses.indexOf(playersGuess) != -1){
   //      	$("div.message" ).html( "<p>You already guessed that number.</p>");
-        }
+  //      }
 	else {
 	//	guesses.push(playersGuess);
 	//	guessesLeft = guesses.length;
