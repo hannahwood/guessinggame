@@ -8,7 +8,7 @@ h1 {
   color: white;
   font-variant: small-caps;
   font-family: Futura, “Trebuchet MS”, Arial, sans-serif;
-  font-size: 30pt
+  font-size: 30pt;
 }
 
 p {
@@ -22,7 +22,9 @@ form {
 }
 
 input[type=text] {
-  padding: 20px;
+  font-size: 12pt;
+  text-align: center;
+  padding: 18px;
   border: 2px solid #3399ff;
   border-radius: 5px;
 }
@@ -42,5 +44,9 @@ input[type=button] {
   background: white;
   color: black;
   border-radius: 0px;
+  font-size: 9pt
+}
+
+.lowerHigher {
   font-size: 9pt
 }
