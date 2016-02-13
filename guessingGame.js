@@ -35,7 +35,7 @@ function lowerOrHigher(){
 // Check if the Player's Guess is the winning number 
 
 function checkGuess(){
-	var guesses = [];
+	guesses = [];
 	if (playersGuess === winningNumber){
 		$("div.message" ).html( "<p><b>You won!</b></p>");
 		guesses = [];
