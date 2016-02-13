@@ -64,7 +64,7 @@ function checkGuess(){
 	//	guesses.push(playersGuess);
 	//	guessesLeft = guesses.length;
 		$("div.message" ).html( "<p>Try again. </p>");
-		$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
+	//	$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
 	}
 
 }
