@@ -19,8 +19,8 @@ function generateWinningNumber(){
 // Fetch the Players Guess
 
 function playersGuessSubmission(){
-	var guess = +document.getElementById("sumbitValue").value;
-	document.getElementById("sumbitValue").value = '';
+	var guess = +document.getElementById("submitValue").value;
+	document.getElementById("submitValue").value = '';
 	return guess;
 }
 
