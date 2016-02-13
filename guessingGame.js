@@ -81,6 +81,6 @@ function provideHint(){
 function playAgain(){
 	// add code here
 }
-)}
+});
 
 /* **** Event Listeners/Handlers ****  */
