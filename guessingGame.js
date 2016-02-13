@@ -16,7 +16,7 @@ function generateWinningNumber(){
 
 
 function playersGuessSubmission(){
-	playersGuess = +document.getElementById("sumbitValue").value;
+	var playersGuess = +document.getElementById("sumbitValue").value;
 	document.getElementById("sumbitValue").value = '';
 	checkGuess();
 }
@@ -48,6 +48,8 @@ function lowerOrHigher(){
 // Check if the Player's Guess is the winning number 
 
 function checkGuess(){
+	var winningNumber = generateWinningNumber();
+	var playersGuess = playersGuessSubmission();
 	if (playersGuess === winningNumber){
 		$("div.message" ).html( "<p><b>You won!</b></p>");
 	}
