@@ -55,6 +55,7 @@ function lowerOrHigher(){
 function checkGuess(){
 	if (playersGuess === winningNumber){
 		$("div.message" ).html( "<p><b>You won!</b></p>");
+		var elt = document.getElementById("winMessage");
 		elt.setAttribute("style", "color: red", "font-size: 15pt");
 		guesses = [];
 	}
