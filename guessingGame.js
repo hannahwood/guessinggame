@@ -81,8 +81,8 @@ function provideHint(){
 	var array = [0, 1, 2];
 	var randomNo = Math.floor(Math.random() * 3);
 	array[randomNo] = winningNumber;
-	array[randomNo - 1] = no1;
-	array[randomNo - 2] = no1;
+	array[randomNo%2] = no1;
+	array[randomNo%1] = no1;
 	$("div.message" ).html( "<p>The answer is either " + array[0] + ", " + array[1] + ", or " + array[2] + " guesses left</p>");
 }
 
