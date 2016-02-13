@@ -55,6 +55,7 @@ function lowerOrHigher(){
 function checkGuess(){
 	if (playersGuess === winningNumber){
 		$("div.message" ).html( "<p><b>You won!</b></p>");
+		document.getElementById("winMessage").style.color = "red";
 		guesses = [];
 	}
 	else if (100 < playersGuess && playersGuess< 1 ) {
