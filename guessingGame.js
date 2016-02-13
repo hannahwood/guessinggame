@@ -24,6 +24,7 @@ function generateWinningNumber(){
 function playersGuessSubmission(){
 	playersGuess = +document.getElementById("sumbitValue");
 	document.getElementById("sumbitValue").value = '';
+	checkGuess();
 }
 
 // Determine if the next guess should be a lower or higher number
