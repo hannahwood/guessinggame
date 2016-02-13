@@ -54,18 +54,17 @@ function checkGuess(){
 	else if (100 < playersGuess < 1 ) {
 		$("div.message" ).html( "<p>That number is not between 1 and 100.</p>");
 	}
-	else{
+	else if{
         for (i = 0; i < guesses.length; i++) {
         	if (playersGuess === guesses[i]){
         		$("div.message" ).html( "<p>You already guessed that number.</p>");
         	}
-        	else {
-        		guesses.push(playersGuess);
-        		guessesLeft = guesses.length;
-        		$("div.message" ).html( "<p>Try again. </p>");
-        		$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
-        	}
         }
+	else {
+		guesses.push(playersGuess);
+		guessesLeft = guesses.length;
+		$("div.message" ).html( "<p>Try again. </p>");
+		$("div.message" ).append( document.createTextNode(guessesLeft.toString() + " guesses left"));
 	}
 
 }
