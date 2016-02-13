@@ -48,8 +48,8 @@ input[type=button] {
 }
 
 #winMessage {
-  color: white;
-  font-size: 9pt;
+  color: red;
+  font-size: 15pt;
 }
 
 .lowerHigher {
