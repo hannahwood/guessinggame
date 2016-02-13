@@ -93,7 +93,10 @@ function provideHint(){
 // Allow the "Player" to Play Again
 
 function playAgain(){
-	// add code here
+	winningNumber = generateWinningNumber(),
+    	guesses = [];
+    	$("div.message" ).html( "<p></p>");
+    	$("div.lowerHigher" ).html( "<p></p>");
 }
 
 
