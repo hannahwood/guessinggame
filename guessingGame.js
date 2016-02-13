@@ -79,10 +79,10 @@ function provideHint(){
 	var no1 = randomNumber = Math.floor(Math.random() * 100 + 1);
 	var no2 = randomNumber = Math.floor(Math.random() * 100 + 1);
 	var array = [0, 1, 2];
-	var randomNo = Math.floor(Math.random() * 3);
-	array[randomNo] = winningNumber;
-	array[randomNo%2] = no1;
-	array[randomNo%1] = no2;
+	var randomNo = Math.ceil(Math.random() * 3);
+	array[randomNo - 1] = winningNumber;
+	array[randomNo%2 - 1] = no1;
+	array[randomNo%1 - 1] = no2;
 	$("div.message" ).html( "<p>The answer is either " + array[0] + ", " + array[1] + ", or " + array[2] + " guesses left</p>");
 }
 
