@@ -96,7 +96,7 @@ function playAgain(){
 	winningNumber = generateWinningNumber(),
     	guesses = [];
     	$("div.message" ).html( "<p></p>");
-    	$("div.lowerHigher" ).html( "<p></p>");
+    	$("div.lowerHigher" ).html( "<p>5 Guesses Remaining</p>");
 }
 
 
