@@ -30,6 +30,7 @@ function playersGuessSubmission(){
 
 function lowerOrHigher(){
 	var hilo = '';
+	var difference = Math.abs(winningNumber - playersGuess);
 	if (winningNumber < playersGuess) {
 		hilo = 'higher';
 	}
