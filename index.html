@@ -14,7 +14,7 @@
   <br>
   <br>
   <form>
-    <input type="text" id="submitValue" placeholder="input number 1 - 100" onsubmit="if (event.keyCode ===13) playersGuessSubmission()"> &nbsp;
+    <input type="text" id="submitValue" placeholder="input number 1 - 100" onkeydown="if (event.keyCode ===13) playersGuessSubmission()"> &nbsp;
     <input type="button" id="submitButton" onclick="playersGuessSubmission()" value="SUBMIT">
     <div class="lowerHigher">
       <p></p>
