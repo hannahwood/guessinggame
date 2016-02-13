@@ -95,8 +95,8 @@ function provideHint(){
 function playAgain(){
 	winningNumber = generateWinningNumber(),
     	guesses = [];
-    	$("div.message" ).html( "<p></p>");
-    	$("div.lowerHigher" ).html( "<p>5 Guesses Remaining</p>");
+    	$("div.message" ).html( "<p>5 Guesses Remaining</p>");
+    	$("div.lowerHigher" ).html( "<p></p>");
 }
 
 
