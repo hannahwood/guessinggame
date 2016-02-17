@@ -66,7 +66,7 @@ function checkGuess(){
 		$("div.message" ).html( "<p><b>You lost!</b></p>");
 		guesses = [];
 	}
-	else if (100 < playersGuess && playersGuess< 1 ) {
+	else if (100 < playersGuess || playersGuess< 1 ) {
 		$("div.message" ).html( "<p>That number is not between 1 and 100.</p>");
 	}
 	else if (guesses.indexOf(playersGuess) != -1){
